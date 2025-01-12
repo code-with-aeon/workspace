@@ -1,0 +1,42 @@
+@import 'variables';
+
+// header styles
+header {
+    height: 92px;
+    width: 100%;
+    background-color: $clr-primary1;
+    display: grid;
+    align-items: center;
+    font-family: $ff-inter;
+    
+    .navbar {
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .navbar__logo {
+            height: 5vh;
+        }
+        .navbar__lists {
+            list-style: none;
+            display: inline-flex;
+            align-items: center;
+            .navbar__link {
+                color: $clr-secondary3;
+                text-decoration: none;
+            }
+            .navbar__login {
+                height: 60px;
+                width: 126px;
+            }
+            .navbar__try-whitepace {
+                height: 60px;
+                width: 337px;
+            }
+        }
+    }
+}
+
+
+

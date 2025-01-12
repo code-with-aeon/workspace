@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    /* border: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-light: white;
+    --ff-main: 'poppins', monospace, sans-serif;
+
+    --fs-regular: 1rem;
+    --fs-medium: 1.5rem;
+    --fs-double: 2rem;
+
+    --fw-normal: 400;
+    --fw-medium:500;
+    --fw-bold: 700;
+
+    --bg-theme: #1992d4;
+    --bg-semi-white: rgb(184, 184, 184);
+}
+body {
+    display: flex;
+    font-family: var(--ff-main);
+}
+/* styling for sidebar */
+.sidebar {
+    height: 100vh;
+
+    color: white;
+    background-color: var(--bg-theme);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.logo {
+    display: flex;
+}
+.title {
+    margin-left: 1rem;
+    font-weight: 600;
+}
+/* these boxes is for manually recreate the logo */
+.box1,
+.box2, 
+.box3, 
+.box4{
+    background-color: white;
+}
+.box1, .box4 {
+    height: .8rem;
+    width: .7rem;
+    margin: .1rem;
+}
+.box2, .box3{
+    height: .6rem;
+    width: .7rem;
+    margin: .1rem;
+}
+.menu-list {
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.menu-list__items {
+    list-style: none;
+    margin-top: 1rem;
+}
+.menu-list__items a {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+.icons {
+    margin-right: .8rem;
+}
+/* styling of main-content */
+.main-content {
+    width: 82%;
+}
+.dashboard-tools {
+}
+.user-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar {
+
+}
+.active-user {
+    display: inline-flex;
+    align-items: center;
+}
